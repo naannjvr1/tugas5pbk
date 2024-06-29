@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Halaman Produk - Penjualan Laptop</title>
+</head>
+
+<body>
+  <header id="header">
+    <nav id="nav-bar" aria-label="Navigasi Utama">
+      <img id="header-img" src="logo store.jpg" alt="logo" class="logo">
+      <ul>
+        <li><a class="nav-link" href="#features">Fitur</a></li>
+        <li><a class="nav-link" href="#menu">Menu</a></li>
+        <li><a class="nav-link" href="#pricing">Harga</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Carousel -->
+  <div id="carousel" class="carousel" aria-label="Carousel Gambar">
+    <div class="carousel-item active">
+      <img src="laptop rog.jpg" alt="Smoothie 1">
+    </div>
+    <div class="carousel-item">
+      <img src="laptop asus.jpeg" alt="Smoothie 2">
+    </div>
+    <div class="carousel-item">
+      <img src="laptop mac.jpg " alt="Smoothie 3">
+    </div>
+    <button class="carousel-control-prev" aria-label="Sebelumnya">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="carousel-control-next" aria-label="Selanjutnya">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+
+  <div id="container">
+    <section class="message-box">
+      <h1>Laptop Store</h1>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" type="email" name="email" placeholder="contoh@mail.com" required>
+        <input id="submit" type="submit" value="Mulai" class="btn">
+      </form>
+    </section>
+
+    <section id="features">
+      <div class="feature">
+        <i class="fas fa-apple-alt fa-3x"></i>
+        <div>
+          <h2>ROG</h2>
+          <p>Prosesor: AMD Ryzen™ 9 4900HS 3.0 GHz
+            Grafis: NVIDIA® GeForce® GTX 1660Ti
+            Layar: FHD 6 Inch
+            RAM: 8GB DDR4
+            SSD: 1TB
+            OS: Windows 10 Home (64bit)
+            Fitur: Smart AMP technology
+            Daya tahan baterai: hingga 8,8 jam</p>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-truck fa-3x"></i>
+        <div>
+          <h2>Mackbook</h2>
+          <p>CPU 8-core dengan 4 core performa dan 4 core efisiensi
+            GPU 10-core
+            Ray tracing yang dipercepat perangkat keras
+            Neural Engine 16-core
+            Bandwidth memori 100 GB/s</p>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-thumbs-up fa-3x"></i>
+        <div>
+          <h2>Lenovo IdeaPad</h2>
+          <p>Layar: IPS 14 inci, resolusi 1366 x 768 piksel
+            Prosesor: AMD A9-9420
+            Grafis: AMD Radeon R5
+            RAM: 4GB DDR4
+            Penyimpanan: 1TB HDD</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2>List Laptop</h2>
+      <div class="card">
+        <div class="price-box">
+          <h3>ROG</h3>
+          <h2>Rp 11.000.000</h2>
+          <p>Prosesor: AMD Ryzen™ 9 4900HS 3.0 GHz Grafis: NVIDIA® GeForce® GTX 1660Ti Layar: FHD 6 Inch RAM: 8GB DDR4 SSD: 1TB OS: Windows 10 Home (64bit) Fitur: Smart AMP technology Daya tahan baterai: hingga 8,8 jam</p>
+          <label for="classic-quantity">Jumlah:</label>
+          <input type="number" id="classic-quantity" name="classic-quantity" min="1" max="10">
+          <a href="#" class="btn">Tambahkan ke Keranjang</a>
+          <a href="#" class="btn">Beli Sekarang</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="price-box">
+          <h3>Mackbook</h3>
+          <h2>Rp10.000.000</h2>
+          <p>CPU 8-core dengan 4 core performa dan 4 core efisiensi GPU 10-core Ray tracing yang dipercepat perangkat keras Neural Engine 16-core Bandwidth memori 100 GB/s</p>
+          <label for="green-quantity">Jumlah:</label>
+          <input type="number" id="green-quantity" name="green-quantity" min="1" max="10">
+          <a href="#" class="btn">Tambahkan ke Keranjang</a>
+          <a href="#" class="btn">Beli Sekarang</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="price-box">
+          <h3>Lenovo IdeaPad</h3>
+          <h2>Rp5.000.000</h2>
+          <p>Layar: IPS 14 inci, resolusi 1366 x 768 piksel Prosesor: AMD A9-9420 Grafis: AMD Radeon R5 RAM: 4GB DDR4 Penyimpanan: 1TB HDD</p>
+          <label for="protein-quantity">Jumlah:</label>
+          <input type="number" id="protein-quantity" name="protein-quantity" min="1" max="10">
+          <a href="#" class="btn">Tambahkan ke Keranjang</a>
+          <a href="#" class="btn">Beli Sekarang</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <h2>Opsi Pembayaran</h2>
+      <div class="payment-method">
+        <button class="payment-btn" data-method="Kartu Kredit">
+          <i class="fas fa-credit-card fa-3x"></i>
+          <div>
+            <h2>Kartu Kredit</h2>
+            <p>Bayar dengan aman menggunakan kartu kredit .</p>
+          </div>
+        </button>
+      </div>
+      <div class="payment-method">
+        <button class="payment-btn" data-method="PayPal">
+          <i class="fas fa-wallet fa-3x"></i>
+          <div>
+            <h2>PayPal</h2>
+            <p>Gunakan PayPal untuk pembayaran cepat dan aman.</p>
+          </div>
+        </button>
+      </div>
+      <div class="payment-method">
+        <button class="payment-btn" data-method="Bayar di Tempat">
+          <i class="fas fa-money-bill-wave fa-3x"></i>
+          <div>
+            <h2>Casn Bayar di Tempat</h2>
+            <p>Bayar dengan uang tunai saat pesanan Anda tiba.</p>
+          </div>
+        </button>
+      </div>
+      <div class="payment-method">
+        <button class="payment-btn" data-method="Bank Mandiri">
+          <i class="fas fa-university fa-3x"></i>
+          <div>
+            <h2>BCA</h2>
+            <p>Bayar menggunakan transfer bank ke rekening Bank BCA</p>
+          </div>
+        </button>
+      </div>
+      <div class="payment-method">
+        <button class="payment-btn" data-method="BRI">
+          <i class="fas fa-university fa-3x"></i>
+          <div>
+            <h2>BRI</h2>
+            <p>Bayar menggunakan transfer bank ke rekening BRI.</p>
+          </div>
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer id="main-footer">
+    <div>
+      <a href="#">Privasi</a>
+      <a href="#">Syarat</a>
+      <a href="#">Kontak</a>
+    </div>
+    <p class="my-name">Halaman ini dibuat oleh <atarget="_blank" id="fcs" href="https://github.com/FreeCodeCamp-Solutions/">Muhammad Nanda Rezky Putra FreeCodeCamp-Solutions </a></p>
+    <p>&copy;Hak Cipta 2024, JUAL BELI LAPTOP</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.payment-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        alert('Metode pembayaran dipilih: ' + button.getAttribute('data-method'));
+      });
+    });
+
+    // Simple Carousel Script with Auto-Slide
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-item');
+    const totalSlides = slides.length;
+
+    const showSlide = (index) => {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    };
+
+    document.querySelector('.carousel-control-next').addEventListener('click', () => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      showSlide(currentSlide);
+    });
+
+    document.querySelector('.carousel-control-prev').addEventListener('click', () => {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      showSlide(currentSlide);
+    });
+
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      showSlide(currentSlide);
+    }, 3000);
+  </script>
+</body>
+
+</html>
